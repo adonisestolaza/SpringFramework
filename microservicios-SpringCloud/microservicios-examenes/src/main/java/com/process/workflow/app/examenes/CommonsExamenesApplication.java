@@ -1,0 +1,17 @@
+package com.process.workflow.app.examenes;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+@SpringBootApplication
+@EnableEurekaClient
+@EntityScan({"com.process.workflow.commons.examenes.models.entity"})
+public class CommonsExamenesApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CommonsExamenesApplication.class, args);
+	}
+
+}
